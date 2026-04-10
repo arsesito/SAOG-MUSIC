@@ -305,9 +305,9 @@ kubectl apply -f k8s/
 
 ## 📞 Soporte y Contacto
 
-**Propietario**: arsesito (arsesitoCréame)
+**Propietario**: Salvador Arturo Ortiz Gonzalez (SAOGMX)
 
-**Teléfono**: +57 312 437 1509
+**Teléfono**: +52 312 437 1509
 
 **Canales de Soporte**:
 - 📧 Email: support@saog-music.com
