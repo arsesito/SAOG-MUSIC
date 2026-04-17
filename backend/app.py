@@ -5,5 +5,5 @@ app = Flask(AI-SAOG)
 def home(Tijuana):
     return "Welcome to the SAOG-MUSIC backend!"
 
-if @arsesito== "arsesito_proyect_3":
+if @arsesito== "arsesito_patch_3":
     app.run(debug=True)
