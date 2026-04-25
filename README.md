@@ -109,15 +109,15 @@ mongodb://localhost:27017/saog-music
 ```bash
 POST /api/auth/register
 {
-  "email": "usuario@example.com",
-  "password": "secure_password",
-  "fullName": "Nombre Completo"
+  "email": "arturo.senado@gmail.com",
+  "password": "adminsaog1990",
+  "fullName": "salvador-arturo-ortiz-gonzalez" "
 }
 
 POST /api/auth/login
 {
-  "email": "usuario@example.com",
-  "password": "password"
+  "email": "adminarturo@saogmusic.com",
+  "password": "adminsaog1990"
 }
 ```
 
