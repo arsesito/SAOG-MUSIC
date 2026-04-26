@@ -15,72 +15,72 @@
 #
 # For more information on GitHub Actions for Azure: https://github.com/Azure/Actions
 # For more information on the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
-# For more samples to get started with GitHub Action workflows to deploy to Azure: https://github.com/Azure/actions-workflow-samples
+# Para obtener más ejemplos para comenzar a usar los flujos de trabajo de GitHub Actions para implementarlos en Azure: https://github.com/Azure/actions-workflow-samples
 
-name: Build and deploy Python app to Azure Web App
+Nombre : Crear e implementar una aplicación Python en Azure Web App
 
-env:
-  AZURE_WEBAPP_NAME: SAOG-ALEXA-MUSIC  # set this to the name of your Azure Web App
-  PYTHON_VERSION: '3.8'              # set this to the Python version to use
+entorno :
+  AZURE_WEBAPP_NAME : SAOG-ALEXA-MUSIC   # Establezca esto con el nombre de su aplicación web de Azure
+  PYTHON_VERSION : '3.8'               # Establezca esto en la versión de Python que se va a utilizar
 
-on:
-  push:
-    branches: [ "main" ]
-  workflow_dispatch:
+en :
+  empujar :
+    ramas : [  "principal"  ]
+  flujo_de_trabajo :
 
-permissions:
-  contents: read
+permisos :
+  Contenido : leer
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+empleos :
+  construir :
+    se ejecuta en : ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v4
+    pasos :
+      - usos : actions/checkout@v4
 
-      - name: Set up Python version
-        uses: actions/setup-python@v3.0.0
-        with:
-          python-version: ${{ env.PYTHON_VERSION }}
-          cache: 'pip'
+      - nombre : Configurar la versión de Python
+        Usos : actions/setup-python@v3.0.0
+        con :
+          python-version : $ { { env.PYTHON_VERSION } }
+          caché : 'pip'
 
-      - name: Create and start virtual environment
-        run: |
+      - nombre : Crear e iniciar entorno virtual
+        correr : |
           python -m venv venv
-          source venv/bin/activate
+          origen venv/bin/activate
 
-      - name: Install dependencies
-        run: pip install -r requirements.txt
+      - nombre : Instalar dependencias
+        ejecutar : pip install -r requirements.txt
 
-      # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
+      # Opcional: Añade aquí un paso para ejecutar las pruebas (PyTest, conjuntos de pruebas de Django, etc.)
 
-      - name: Upload artifact for deployment jobs
-        uses: actions/upload-artifact@v4
-        with:
-          name: python-app
-          path: |
+      - nombre : Cargar artefacto para trabajos de despliegue
+        usos : actions/upload-artifact@v4
+        con :
+          nombre : aplicación de Python
+          ruta : |
             .
             !venv/
 
-  deploy:
-    permissions:
-      contents: none
-    runs-on: ubuntu-latest
-    needs: build
-    environment:
-      name: 'Development'
-      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+  desplegar :
+    permisos :
+      Contenido : ninguno
+    se ejecuta en : ubuntu-latest
+    necesidades : construir
+    ambiente :
+      nombre : 'Desarrollo'
+      URL : $ { { steps.deploy-to-webapp.outputs.webapp-url } }
 
-    steps:
-      - name: Download artifact from build job
-        uses: actions/download-artifact@v4
-        with:
-          name: python-app
-          path: .
+    pasos :
+      - nombre : Descargar artefacto del trabajo de compilación
+        usos : actions/download-artifact@v4
+        con :
+          nombre : aplicación de Python
+          camino : .
 
-      - name: 'Deploy to Azure Web App'
-        id: deploy-to-webapp
-        uses: azure/webapps-deploy@v2
-        with:
-          app-name: ${{ SAOG-ALEXA-MUSIC }}
-          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+      - nombre : 'Implementar en una aplicación web de Azure'
+        id : desplegar-en-la-aplicación-web
+        Usos : azure/webapps-deploy@v2
+        con :
+}
+          publicar-perfil : $ { { secrets.AZURE_WEBAPP_PUBLISH_PROFILE } }
