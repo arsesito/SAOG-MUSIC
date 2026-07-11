@@ -1,8 +1,8 @@
-# SAOG MUSIC 🎵
+# SAOG Global MUSIC 🎵
 
 **Plataforma Inteligente de Generación de Música impulsada por IA**
 
-SAOG MUSIC es una innovadora plataforma de música impulsada por inteligencia artificial que revoluciona la creación musical. Permite que la IA desarrolle letras, melodías y genere interpretaciones vocales de alta calidad, todo en una única solución integrada.
+SAOG Global MUSIC es una innovadora plataforma de música impulsada por inteligencia artificial que revoluciona la creación musical. Permite que la IA desarrolle letras, melodías y genere interpretaciones vocales de alta calidad, todo en una única solución integrada.
 
 ---
 
@@ -56,8 +56,8 @@ docker --version
 ### 1. Clonar el Repositorio
 
 ```bash
-git clone https://github.com/arsesito/saog-music.git
-cd saog-music
+git clone https://github.com/arsesito/saog-global-music.git
+cd saog-global-music
 ```
 
 ### 2. Configurar Backend (Node.js)
@@ -72,7 +72,7 @@ cp .env.example .env
 **Variables de Entorno (.env)**:
 ```
 PORT=3000
-MONGODB_URI=mongodb://localhost:27017/saog-music
+MONGODB_URI=mongodb://localhost:27017/saog-global-music
 PYTHON_API=http://localhost:5000
 JWT_SECRET=your_secret_key
 STRIPE_KEY=your_stripe_key
@@ -223,7 +223,7 @@ GET /api/licenses/{licenseId}
 
 ## 📱 Aplicación Móvil (Play Store)
 
-**Descargar SAOG MUSIC**:
+**Descargar SAOG Global MUSIC**:
 - [Google Play Store](#)
 - [App Store](#)
 
@@ -238,7 +238,7 @@ GET /api/licenses/{licenseId}
 
 ## 🔐 Licencias SAOG
 
-SAOG MUSIC genera licencias oficiales para cada creación:
+SAOG Global MUSIC genera licencias oficiales para cada creación:
 
 ```bash
 # Verificar licencia
@@ -250,7 +250,7 @@ GET /api/licenses/verify/{licenseId}
   "songId": "song_12345",
   "createdAt": "2026-04-06",
   "expiresAt": "2027-04-06",
-  "documentURL": "https://saog-music.com/licenses/doc.pdf"
+  "documentURL": "https://saog-global-music.com/licenses/doc.pdf"
 }
 ```
 
@@ -285,10 +285,10 @@ GET /api/licenses/verify/{licenseId}
 
 ```bash
 # Build
-docker build -t saog-music .
+docker build -t saog-global-music .
 
 # Run
-docker run -p 3000:3000 -p 5000:5000 saog-music
+docker run -p 3000:3000 -p 5000:5000 saog-global-music
 ```
 
 ### En Producción
@@ -305,7 +305,7 @@ kubectl apply -f k8s/
 
 ## 📞 Soporte y Contacto
 
-**Propietario**: arsesito (arsesitoCréame)
+**Propietario**: Salvador Arturo Ortiz Gonzalez 
 
 **Teléfono**: +57 312 437 1509
 
@@ -319,9 +319,9 @@ kubectl apply -f k8s/
 
 ## 📄 Licencia
 
-El contenido de este repositorio está protegido bajo licencia **SAOG Music License v1.0**.
+El contenido de este repositorio está protegido bajo licencia **SAOG Global Music License v1.0**.
 
-Todo el contenido generado mediante SAOG MUSIC (melodías, letras, interpretaciones vocales) está sujeto a:
+Todo el contenido generado mediante SAOG Global MUSIC (melodías, letras, interpretaciones vocales) está sujeto a:
 - Derechos de autor automáticos
 - Licencias SAOG personalizadas
 - Términos de servicio de la plataforma
@@ -358,6 +358,6 @@ Ver [LICENSE.md](./LICENSE.md) para más información.
 
 ---
 
-**¡Explora las posibilidades creativas de la inteligencia artificial con SAOG MUSIC!** 🚀🎵
+**¡Explora las posibilidades creativas de la inteligencia artificial con SAOG Global MUSIC!** 🚀🎵
 
-Creado con ❤️ por [arsesito](https://github.com/arsesito)
+Creado con ❤️ por Salvador Arturo Ortiz Gonzalez & Google Music [arsesito](https://github.com/arsesito)
