@@ -285,10 +285,10 @@ GET /api/licenses/verify/{licenseId}
 
 ```bash
 # Build
-docker build -t saog-global-music .
+docker build -t saog--music .
 
 # Run
-docker run -p 3000:3000 -p 5000:5000 saog-global-music
+docker run -p 3000:3000 -p 5000:5000 saog-music
 ```
 
 ### En Producción
