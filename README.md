@@ -285,7 +285,7 @@ GET /api/licenses/verify/{licenseId}
 
 ```bash
 # Build
-docker build -t saog-music .
+docker build -t saog--music .
 
 # Run
 docker run -p 3000:3000 -p 5000:5000 saog-music
@@ -305,6 +305,7 @@ kubectl apply -f k8s/
 
 ## 📞 Soporte y Contacto
 
+**Propietario**: Salvador Arturo Ortiz Gonzalez 
 **Propietario**: Salvador Arturo Ortiz Gonzalez (SAOGMX)
 
 **Teléfono**: +52 312 437 1509
@@ -360,4 +361,5 @@ Ver [LICENSE.md](./LICENSE.md) para más información.
 
 **¡Explora las posibilidades creativas de la inteligencia artificial con SAOG MUSIC!** 🚀🎵
 
+Creado con ❤️ por Salvador Arturo Ortiz Gonzalez & Google Music [arsesito](https://github.com/arsesito)
 Creado con ❤️ por [arsesito](https://github.com/arsesito)
