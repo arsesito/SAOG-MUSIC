@@ -109,15 +109,15 @@ mongodb://localhost:27017/saog-music
 ```bash
 POST /api/auth/register
 {
-  "email": "usuario@example.com",
-  "password": "secure_password",
-  "fullName": "Nombre Completo"
+  "email": "arturo.senado@gmail.com",
+  "password": "adminsaog1990",
+  "fullName": "salvador-arturo-ortiz-gonzalez" "
 }
 
 POST /api/auth/login
 {
-  "email": "usuario@example.com",
-  "password": "password"
+  "email": "adminarturo@saogmusic.com",
+  "password": "adminsaog1990"
 }
 ```
 
@@ -306,8 +306,9 @@ kubectl apply -f k8s/
 ## 📞 Soporte y Contacto
 
 **Propietario**: Salvador Arturo Ortiz Gonzalez 
+**Propietario**: Salvador Arturo Ortiz Gonzalez (SAOGMX)
 
-**Teléfono**: +57 312 437 1509
+**Teléfono**: +52 312 437 1509
 
 **Canales de Soporte**:
 - 📧 Email: support@saog-music.com
@@ -361,3 +362,4 @@ Ver [LICENSE.md](./LICENSE.md) para más información.
 **¡Explora las posibilidades creativas de la inteligencia artificial con SAOG MUSIC!** 🚀🎵
 
 Creado con ❤️ por Salvador Arturo Ortiz Gonzalez & Google Music [arsesito](https://github.com/arsesito)
+Creado con ❤️ por [arsesito](https://github.com/arsesito)
